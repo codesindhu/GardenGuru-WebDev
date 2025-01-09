@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Guru</title>
+    <link rel="stylesheet" href="sty.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="d-flex justify-content-between align-items-center" style="height: 60px;">
+        <!-- Logo and App Title -->
+        <div class="d-flex align-items-center v">
+            <img src="WebContent\images\logo.png" alt="Garden Guru Logo" width="50" height="50">
+            <h1 style="margin-left: 10px;" class="gg">Garden Guru</h1>
+        </div>
+        <!-- Search Bar -->
+        <div class="d-flex align-items-center v">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search what you are looking for.." aria-label="Search">
+                <button class="btn btn-outline-secondary" type="button">Search</button>
+            </div>
+        </div>
+        <!-- Login Symbol and Underlined Text -->
+        <div class="d-flex align-items-center">
+            <a href="login.html">Login</a>
+        </div>
+    </header>
+
+    <nav>
+        <!-- Navigation Menu -->
+        <ul class="nav">
+            <li>
+                <a class="nav-link" href="latest.html">Home</a>
+            </li>
+            <li>
+                <a class="nav-link" href="articles.html">Articles</a>
+            </li>
+            <li>
+                <a class="nav-link" href="home.html">Write an article</article></a>
+            </li>
+            <li>
+                <a class="nav-link" href="contactus.html">Contact us</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <section class="Articles" id="main-content">
+        <h1 class="h">Latest Articles</h1><br>
+        <div class="row">
+            <!-- Latest Articles Go Here -->
+            <div class="Articles-col">
+                <h3>Unlocking the Secrets of Organic Gardening</h3>
+                <p>Discover the art of organic gardening and learn how to cultivate a thriving garden using natural and sustainable methods. From composting to companion planting, explore the principles that make organic gardening not just eco-friendly but also highly rewarding.</p>
+
+            </div>
+            <div class="Articles-col">
+                <h3>The Zen of Bonsai: Cultivating Tranquility in Miniature</h3>
+                <p>Delve into the world of bonsai gardening, where artistry meets horticulture. Learn the ancient techniques of shaping and nurturing these miniature trees, and discover how cultivating bonsai can bring a sense of calm and mindfulness to your gardening routine.</p>
+
+            </div>
+            <div class="Articles-col">
+                <h3>Seasonal Delights: Planning a Year-Round Garden</h3>
+                <p>Embark on a journey through the seasons and master the art of planning a garden that flourishes all year. From spring blooms to winter wonders, explore the diverse array of plants that can grace your garden with beauty and color, regardless of the season.</p>
+            </div>
+            <div class="Articles-col">
+                <h3>The Healing Power of Herb Gardens</h3>
+                <p>Uncover the medicinal wonders hidden in your herb garden. From the soothing properties of lavender to the immune-boosting capabilities of echinacea, learn how cultivating a herb garden can not only enhance your culinary adventures but also contribute to your well-being.</p>
+            </div>
+            <div class="Articles-col">
+                <h3>Urban Gardening: Green Oases in the Concrete Jungle</h3>
+                <p>Navigate the challenges of urban living with innovative urban gardening techniques. Discover how to create green spaces, whether it's a balcony garden, vertical gardening, or community plots. Explore the benefits of bringing nature into the heart of the bustling city.</p>
+
+            </div>
+            <div class="Articles-col">
+                <h3>Beyond Beauty: Gardening for Pollinators</h3>
+                <p> Go beyond aesthetics and embrace the ecological significance of gardening for pollinators. Explore the enchanting world of bees, butterflies, and other pollinating creatures. Learn how to create a garden that not only blooms with vibrant colors but also supports essential pollinator population.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex justify-content-between align-items-center" style="height: 80px; padding: 20px; background-color: #333; color: #fff;">
+        <div>
+            <p>&copy; 2023 Garden Guru</p>
+        </div>
+        <div>
+            <p>Connect with us:</p>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="display: inline;"><a href="mailto:info@gardenguru.com" style="color: #fff;">Email:info@gardenguru.com</a></li>
+                <li style="display: inline;"><a href="tel:+1234567890" style="color: #fff;">Phone:+1234567890</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script>
+        function submitArticle(event) {
+            event.preventDefault();
+
+            // Get values from the form
+            const title = document.getElementById("article-title").value;
+            const content = document.getElementById("article-content").value;
+
+            // Display submitted article
+            document.getElementById("submitted-title").innerText = title;
+            document.getElementById("submitted-content").innerText = content;
+            document.getElementById("submitted-article").style.display = "block";
+
+            // Optional: You can also clear the form after submission
+            document.getElementById("article-form").reset();
+        }
+    </script>
+</body>
+
+</html>
